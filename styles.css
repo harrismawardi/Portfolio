@@ -6,15 +6,14 @@ body{
 
 h1{
     font-size: 40px;
+    font-family: Libre Baskerville;
 }
 
 h2{
     font-size: 20px;
 }
 
-li{
-    display: inline;
-}
+
 
 #menu-bar{
     list-style-type: none;
@@ -36,4 +35,12 @@ li{
 #header{
     background-color: aquamarine;
 }
+h1 > span{
+    font-size: 50px;
+}
 
+header > p {
+    font-size: 14px;
+    text-align: centre;
+    font-family: Montserrat;
+}
