@@ -1,0 +1,39 @@
+body{
+    margin:0px;
+    background-color: white;
+    font-family:'Noto Sans JP', monospace;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+li{
+    display: inline;
+}
+
+#menu-bar{
+    list-style-type: none;
+    margin:0px;
+    padding:0px;
+}
+#headshot{
+    height: 100px;
+    border-radius: 100%;
+    border-color:black;
+    border-width: 2px;
+    border-style: solid;
+}
+#contact-box{
+    height:100px;
+    width:200px;
+    padding: 5px,5px,80px,5px;
+}
+#header{
+    background-color: aquamarine;
+}
+
