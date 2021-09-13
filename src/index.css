@@ -8,6 +8,7 @@ html, body {
     height: 100%;
     padding: 0px;
     margin: 0px;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -16,8 +17,6 @@ section {
 }
 
 /*--------Home Page--------*/
-
-
 
 #home{
     height: 100vh;
@@ -46,6 +45,10 @@ section {
 }
 
 .heroLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background:#882D2D;
     height: 260px;
     width: 260px;
@@ -53,24 +56,29 @@ section {
     margin-top: 85px;
 }
 
-
-/* .hero-harris{
-    background-color: coral;
-    border: solid black;
-    height: 50%;
-    margin: 10%;
-    font-size: 3rem;
-    color: white;
+.logoSVG{
+height:80%;
+width:80%
 }
 
-.hello{
-    display: flex;
-    justify-content: space-between;
+/*----------------Navbaar--------------------*/
+
+
+.navbar{
+    position: sticky;
+    top: 0;
+    height:10vh;
+    background-color: white;
+    border:solid green;
 }
-.mawardi{
-    display: flex;
-    justify-content: end;
-} */
+
+
+/*------------------About Me------------------*/
+
+
+
+
+
 
 /*---------------Projects-----------*/
 
