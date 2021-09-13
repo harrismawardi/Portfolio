@@ -11,7 +11,7 @@ import './index.css'
 
 const initState = {
     projects: [
-        { id: 1, title: 'project1', description: '', img: '' },
+        { id: 1, title: 'project1', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', img: 'https://photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg' },
         { id: 2, title: 'project2', description: '', img: '' },
         { id: 3, title: 'project3', description: '', img: '' },
         { id: 4, title: 'project4', description: '', img: '' }

@@ -1,12 +1,19 @@
 import React from 'react'
-import { HeroName } from '../../components'
+
+import { HashLink } from 'react-router-hash-link'
+import { HeroLogo } from '../../components'
 
 
 const Home = () => {
     return (
-    <section id='hero'>
-        <HeroName />
-    </section>
+        <section id='home'>
+            <nav className="homeLinks">
+                <HashLink to='/#home'>about</HashLink>
+                <HashLink to='/#project'>projects</HashLink>
+                <HashLink to='/#contact'>contact</HashLink>
+            </nav>
+            <HeroLogo/>
+        </section>
     )
 }
 

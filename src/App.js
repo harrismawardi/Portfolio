@@ -6,8 +6,8 @@ import { Home, About, Projects, Contact } from './pages'
 const App = () => {
     return (
         <>
-            <Navbar />
             <Home />
+            <Navbar />
             <About />
             <Projects />
             <Contact />

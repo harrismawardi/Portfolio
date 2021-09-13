@@ -6,22 +6,28 @@ const Projects = () => {
 
     const projectsArr = useSelector(state => state.projects)
 
-   // console.log(projectsArr)
+    const [projectThumbnails, setProjectThumbnails] = useState()
+    const [highlightProject, setHighlightProject] = useState(projectsArr[0])
 
-    const [projectElements, setProjectElements] = useState()
+    const projectHandler = (e) => {
+        console.log(e.target.ariaLabel)
+        const selectedProj = projectsArr.find(project => project.title === e.target.ariaLabel)
+        setHighlightProject(selectedProj)
+    }
 
     useEffect(() => {
-        const renderProjects = () => {
-            return projectsArr.map(project => <ProjectCard project={project} /> )
+        const renderThumbnails = () => {
+            return projectsArr.map(project => <img aria-label={project.title} src={project.img} alt={project.title} onClick={projectHandler} />)
         }
-        setProjectElements(renderProjects)
+        setProjectThumbnails(renderThumbnails)
     }, [])
 
-    console.log(projectElements)
-
     return (
-        <section id='projects'>
-            {projectElements}
+        <section id='projects' className='gridContainer'>
+            <div className="sidebar">
+                {projectThumbnails}
+            </div>
+            <ProjectCard project={highlightProject} />
         </section>
     )
 }
