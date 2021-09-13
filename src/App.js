@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar } from './components'
-import { Home, About } from './pages'
+import { Home, About, Projects, Contact } from './pages'
 
 
 const App = () => {
@@ -9,8 +9,8 @@ const App = () => {
             <Navbar />
             <Home />
             <About />
-            <section id='projects'>yo</section>
-            <section id='contact'>holla</section>
+            <Projects />
+            <Contact />
         </>
     )
 }

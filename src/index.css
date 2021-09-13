@@ -16,6 +16,8 @@ section {
     border: solid blue;
 }
 
+/*--------Home Page--------*/
+
 #hero{
     justify-content: space-around;
     background-image: url(https://images.unsplash.com/photo-1608329664382-ba1e66a852b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
@@ -38,6 +40,22 @@ section {
     display: flex;
     justify-content: end;
 }
+
+/*---------------Projects-----------*/
+
+#projects{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 'pr1 pr2 pr3 pr4' ;
+}
+
+.project{
+    border:solid black 1px;
+    border-radius: 10px;
+
+}
+
+/*----------------------------------*/
 
 nav {
     display: flex;
