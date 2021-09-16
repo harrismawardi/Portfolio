@@ -1,0 +1,16 @@
+.heroLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:#882D2D;
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    margin-top: 85px;
+}
+
+.logoSVG{
+height:80%;
+width:80%
+}

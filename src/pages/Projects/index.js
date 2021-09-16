@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { ProjectCard } from '../../components'
 
+import './style.css'
+
 const Projects = () => {
 
     const projectsArr = useSelector(state => state.projects)
