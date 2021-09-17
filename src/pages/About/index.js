@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import { render } from 'react-dom'
 import './style.css'
 
-const About = () => {
+import { css, html, javascript, mongodb, nodejs, postgresql, react, redux } from '../../images'
 
-    const [logos, setLogos] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9])
-    const [slide, setSlide] = useState()
+
+const About = () => {
+    //slides will move to the store enventually
+    const [logos, setLogos] = useState([css, html, javascript, mongodb, nodejs, postgresql, react, redux, 9])
+    const [slide, setSlide] = useState(1)
     const [buttons, setButtons] = useState()
     const [logoElements, setLogoElements] = useState()
 
@@ -23,13 +25,15 @@ const About = () => {
         setButtons(buttonsArr)
     }, [logos])
 
-
+    // C:\Users\Harris\portfolio\src\images\css.svg
     useEffect(() => {
         setLogoElements(() => {
             const previousSlide = slide - 1;
             const elements = []
             for (let i = (previousSlide * 4); i < (slide * 4); i++) {
-                elements.push(<div key={i}>{logos[i]}</div>)
+                if (logos[i]) {
+                    elements.push(<img className='techLogos' src={logos[i]} alt={`${logos[i]}-icon`} />)
+                }
             }
             return elements;
         })
